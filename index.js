@@ -16,12 +16,6 @@ if (typeof (secrets) === "string" && !secrets) {
     secrets = secrets.split(' ');
 }
 
-if(Array.isArray(secrets) && secrets !== [])
-{
-    console.log("Check Config File : ./config.js")
-    return;
-}
-
 if (!num_cpus)
     num_cpus = require('os').cpus().length;
 
